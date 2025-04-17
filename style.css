@@ -18,3 +18,126 @@ body {
     object-fit: contain; /* Ensures the image fits inside the container without cropping */
     object-position: center; /* Centers the image within its container */
   }
+
+  .cls-prof-pfp {
+    height: 5rem;
+    background-color: #161719;
+    border-radius: 50%;
+    position: relative; /* Added */
+    z-index: 1; /* Added to bring it above */
+  }
+
+  .cls-prof-bg-unranked {
+    height: 3rem;
+    width: 20rem;
+    font-weight: bolder;
+    color: #161719;
+    background-color: #161719;
+    background: linear-gradient(90deg,#161719 0%, #ffffff 30%);
+    border-radius: 15px;
+    position: relative; /* Added */
+    z-index: -1; /* Now this works */
+    margin-left: -1.5rem; /* Adjust to position behind the PFP */
+  }
+  
+
+  .cls-prof-bg-rogue {
+    height: 3rem;
+    width: 20rem;
+    font-weight: bolder;
+    color: #161719;
+    background-color: #161719;
+    background: linear-gradient(90deg,#161719 0%, #F8312F 30%);
+    border-radius: 15px;
+    position: relative; /* Added */
+    z-index: -1; /* Now this works */
+    margin-left: -1.5rem; /* Adjust to position behind the PFP */
+  }
+
+  .cls-prof-bg-hawk {
+    height: 3rem;
+    width: 20rem;
+    font-weight: bolder;
+    color: #161719;
+    background-color: #161719;
+    background: linear-gradient(90deg,#161719 0%, #FF6723 30%);
+    border-radius: 15px;
+    position: relative; /* Added */
+    z-index: -1; /* Now this works */
+    margin-left: -1.5rem; /* Adjust to position behind the PFP */
+  }
+  
+  
+  .cls-prof-bg-wraith {
+    height: 3rem;
+    width: 20rem;
+    font-weight: bolder;
+    color: #161719;
+    background-color: #161719;
+    background: linear-gradient(90deg,#161719 0%, #FFB02E 30%);
+    border-radius: 15px;
+    position: relative; /* Added */
+    z-index: -1; /* Now this works */
+    margin-left: -1.5rem; /* Adjust to position behind the PFP */
+  }
+  
+  .cls-prof-bg-shadow {
+    height: 3rem;
+    width: 20rem;
+    font-weight: bolder;
+    color: #161719;
+    background-color: #161719;
+    background: linear-gradient(90deg,#161719 0%, #00D26A 30%);
+    border-radius: 15px;
+    position: relative; /* Added */
+    z-index: -1; /* Now this works */
+    margin-left: -1.5rem; /* Adjust to position behind the PFP */
+  }
+
+  .cls-prof-bg-vortex {
+    height: 3rem;
+    width: 20rem;
+    font-weight: bolder;
+    color: #161719;
+    background-color: #161719;
+    background: linear-gradient(90deg,#161719 0%, #00A6ED 30%);
+    border-radius: 15px;
+    position: relative; /* Added */
+    z-index: -1; /* Now this works */
+    margin-left: -1.5rem; /* Adjust to position behind the PFP */
+  }
+  
+  .cls-prof-bg-reaper {
+    height: 3rem;
+    width: 20rem;
+    font-weight: bolder;
+    color: #161719;
+    background-color: #161719;
+    background: linear-gradient(90deg,#161719 0%, #C790F1 30%);
+    border-radius: 15px;
+    position: relative; /* Added */
+    z-index: -1; /* Now this works */
+    margin-left: -1.5rem; /* Adjust to position behind the PFP */
+  }
+  
+  .cls-text-bg {
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 20%;
+    top: -2.3rem;
+    left: 1rem;
+    font-size: 5.3rem;
+  }
+
+  .cls-textshadow {
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px #00000050;
+  }
+
+  .cls-card-bg{
+    background-color: #161719;
+    border-radius: 15px;
+  }
+
+  .cls-robux {
+    height: 6rem;
+  }
