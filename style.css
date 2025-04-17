@@ -1,0 +1,20 @@
+body {
+    background-color: #212529;
+  }
+  
+  .carousel {
+    max-width: 80%; /* Set the width of the carousel to 80% of the screen width */
+    margin: 0 auto; /* Centers the carousel horizontally */
+  }
+  
+  .carousel-inner {
+    width: 100%; /* Ensures the inner container takes full width */
+    height: auto; /* Allows the carousel to adjust its height based on the image size */
+  }
+  
+  .carousel-item img {
+    width: 100%; /* Ensures the image spans the full width of the carousel */
+    height: auto; /* Automatically adjusts height while preserving aspect ratio */
+    object-fit: contain; /* Ensures the image fits inside the container without cropping */
+    object-position: center; /* Centers the image within its container */
+  }
