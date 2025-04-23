@@ -141,3 +141,7 @@ body {
   .cls-robux {
     height: 6rem;
   }
+
+  .cls-invis {
+      opacity: 0;
+  }
