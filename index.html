@@ -1,82 +1,171 @@
-<div class="container text-light px-5">
-   <div class="row">
-      <div class="col-6">
-         <h3 class="ms-2 mb-3">Top 5 Ranked Racers</h3>
-
-         <!-- Illoxie -->
-         <div class="mt-3">
-            <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/lox.webp" alt="Illoxie">
-            <div class="cls-prof-bg-wraith d-inline-block py-2 px-5 text-center align-content-center">
-               <p class="cls-text-bg position-absolute">LOX</p>
-               <div class="cls-textshadow">
-                  <p class="d-inline pe-3">31 POINTS</p>
-                  <p class="d-inline">WRAITH</p>
-               </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blacklisted | Roblox Racing</title>
+    <link rel="icon" type="image/x-icon" href="/images/bl.ico" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome (Optional for icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS (Optional for extra styling) -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-flag-checkered me-2"></i>Blacklisted
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
             </div>
-         </div>
+        </div>
+    </nav>
 
-         <!-- Jesus -->
-         <div class="mt-3">
-            <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/jesus.webp" alt="Jesus">
-            <div class="cls-prof-bg-wraith d-inline-block py-2 px-5 text-center align-content-center">
-               <p class="cls-text-bg position-absolute">JESUS</p>
-               <div class="cls-textshadow">
-                  <p class="d-inline pe-3">31 POINTS</p>
-                  <p class="d-inline">WRAITH</p>
-               </div>
-            </div>
-         </div>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Welcome to Blacklisted</h1>
+            <p class="lead">We’re all about racing and building a community of skilled Zaibatsu racers. Connect with others, compete in weekly tournaments, and climb the ranks. Every week, The Blacklisted hosts 2 tournaments, so don’t miss your chance to prove yourself on the track.</p>
+        </div>
+    </header>
 
-         <!-- Xy -->
-         <div class="mt-3">
-            <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/xy.webp" alt="XY">
-            <div class="cls-prof-bg-hawk d-inline-block py-2 px-5 text-center align-content-center">
-               <p class="cls-text-bg position-absolute">XY</p>
-               <div class="cls-textshadow">
-                  <p class="d-inline pe-3">13 POINTS</p>
-                  <p class="d-inline">HAWK</p>
-               </div>
+    <!-- Carousel -->
+    <div id="blacklistedCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/car1.png" class="d-block w-100" alt="Slide 1">
             </div>
-         </div>
+            <div class="carousel-item">
+                <img src="/images/car2.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/car3.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/car4.png" class="d-block w-100" alt="Slide 4">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/car5.png" class="d-block w-100" alt="Slide 5">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/car6.png" class="d-block w-100" alt="Slide 6">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/car7.png" class="d-block w-100" alt="Slide 7">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/car8.png" class="d-block w-100" alt="Slide 8">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#blacklistedCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#blacklistedCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-         <!-- Hikari -->
-         <div class="mt-3">
-            <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/hikari.webp" alt="Hikari">
-            <div class="cls-prof-bg-hawk d-inline-block py-2 px-5 text-center align-content-center">
-               <p class="cls-text-bg position-absolute">HIKARI</p>
-               <div class="cls-textshadow">
-                  <p class="d-inline pe-3">11 POINTS</p>
-                  <p class="d-inline">HAWK</p>
-               </div>
-            </div>
-         </div>
+    <!-- Main Content Section -->
+    <div class="container text-light px-5">
+        <div class="row">
+            <!-- Left Column - Top Ranked Racers -->
+            <div class="col-lg-6 col-md-12">
+                <h3 class="ms-2 mb-3">Top 5 Ranked Racers</h3>
 
-         <!-- Kobahashi Yoshi -->
-         <div class="mt-3 mb-4">
-            <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/kobahashiyoshi.webp" alt="Yoshi">
-            <div class="cls-prof-bg-hawk d-inline-block py-2 px-5 text-center align-content-center">
-               <p class="cls-text-bg position-absolute">YOSHI</p>
-               <div class="cls-textshadow">
-                  <p class="d-inline pe-3">11 POINTS</p>
-                  <p class="d-inline">HAWK</p>
-               </div>
-            </div>
-         </div>
-      </div> <!-- 🔥 Close the first col-6 properly here 🔥 -->
+                <!-- Racer Profiles -->
+                <div class="racers">
+                    <div class="racers-item mt-3">
+                        <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/lox.webp" alt="Illoxie">
+                        <div class="cls-prof-bg-wraith d-inline-block py-2 px-5 text-center">
+                            <p class="cls-text-bg position-absolute">LOX</p>
+                            <div class="cls-textshadow">
+                                <p class="d-inline pe-3">31 POINTS</p>
+                                <p class="d-inline">WRAITH</p>
+                            </div>
+                        </div>
+                    </div>
 
-      <div class="col-6">
-         <!-- Upcoming Events -->
-         <div>
-            <h3 class="text-end">Upcoming Events</h3>
-            <div class="cls-card-bg p-4 text-light shadow-sm">
-               <h5 class="mb-2 fs-3 text-center">1K HIGHWAY SHOWDOWN : Collab Edition</h5>
-               <p class="mb-0 text-light text-center">27th April, Sun</p>
-               <div style="pointer-events: none;">
-                  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-                  <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns" data-timezone="Europe/Moscow" data-textcolor="#f8f9fa" data-date="2025-04-27 23:00" data-digitscolor="#f8f9fa" data-unitscolor="#f8f9fa">Countdown Timer</a>
-               </div>
+                    <div class="racers-item mt-3">
+                        <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/jesus.webp" alt="Jesus">
+                        <div class="cls-prof-bg-wraith d-inline-block py-2 px-5 text-center">
+                            <p class="cls-text-bg position-absolute">JESUS</p>
+                            <div class="cls-textshadow">
+                                <p class="d-inline pe-3">31 POINTS</p>
+                                <p class="d-inline">WRAITH</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="racers-item mt-3">
+                        <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/xy.webp" alt="XY">
+                        <div class="cls-prof-bg-hawk d-inline-block py-2 px-5 text-center">
+                            <p class="cls-text-bg position-absolute">XY</p>
+                            <div class="cls-textshadow">
+                                <p class="d-inline pe-3">13 POINTS</p>
+                                <p class="d-inline">HAWK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="racers-item mt-3">
+                        <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/hikari.webp" alt="Hikari">
+                        <div class="cls-prof-bg-hawk d-inline-block py-2 px-5 text-center">
+                            <p class="cls-text-bg position-absolute">HIKARI</p>
+                            <div class="cls-textshadow">
+                                <p class="d-inline pe-3">11 POINTS</p>
+                                <p class="d-inline">HAWK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="racers-item mt-3">
+                        <img class="cls-prof-pfp d-inline-block shadow-lg" src="/images/kobahashiyoshi.webp" alt="Yoshi">
+                        <div class="cls-prof-bg-hawk d-inline-block py-2 px-5 text-center">
+                            <p class="cls-text-bg position-absolute">YOSHI</p>
+                            <div class="cls-textshadow">
+                                <p class="d-inline pe-3">11 POINTS</p>
+                                <p class="d-inline">HAWK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </div> <!-- row -->
-</div> <!-- container -->
+
+            <!-- Right Column - Upcoming Events -->
+            <div class="col-lg-6 col-md-12">
+                <h3 class="text-end">Upcoming Events</h3>
+                <div class="cls-card-bg p-4 text-light shadow-sm">
+                    <h5 class="mb-2 fs-3 text-center">1K HIGHWAY SHOWDOWN: Collab Edition</h5>
+                    <p class="mb-0 text-light text-center">27th April, Sun</p>
+                    <div style="pointer-events: none;">
+                        <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+                        <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-style="columns" data-timezone="Europe/Moscow" data-textcolor="#f8f9fa" data-date="2025-04-27 23:00" data-digitscolor="#f8f9fa" data-unitscolor="#f8f9fa">Countdown Timer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 The Blacklisted — Never Stop Racing ♥</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
