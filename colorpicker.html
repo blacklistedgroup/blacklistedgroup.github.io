@@ -21,20 +21,38 @@
       cursor: pointer;
     }
   </style>
+  <link id="favicon" rel="icon" type="image/png" href="">
 </head>
 <body>
   <input type="color" id="picker" autofocus>
 
   <script>
     const picker = document.getElementById('picker');
+    const favicon = document.getElementById('favicon');
 
-    // Pressing Enter confirms the selection
+    function setFavicon(color) {
+      const canvas = document.createElement('canvas');
+      canvas.width = 64;
+      canvas.height = 64;
+      const ctx = canvas.getContext('2d');
+
+      // Draw a filled circle
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(32, 32, 30, 0, Math.PI * 2);
+      ctx.fill();
+
+      const dataURL = canvas.toDataURL('image/png');
+      favicon.href = dataURL;
+    }
+
     picker.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
-        const selectedColor = picker.value;
-        document.body.style.backgroundColor = selectedColor;
-        document.title = selectedColor.toUpperCase(); // Set title to HEX code
-        picker.remove(); // Remove picker from page
+        const color = picker.value;
+        document.body.style.backgroundColor = color;
+        document.title = color.toUpperCase();
+        setFavicon(color);
+        picker.remove();
       }
     });
   </script>
