@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pick a Color</title>
+  <title>Pick a color and press Enter to confirm</title>
   <style>
     html, body {
       margin: 0;
@@ -28,9 +28,14 @@
   <script>
     const picker = document.getElementById('picker');
 
-    picker.addEventListener('change', () => {
-      document.body.style.backgroundColor = picker.value;
-      picker.remove(); // Remove the picker only when fully selected
+    // Pressing Enter confirms the selection
+    picker.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const selectedColor = picker.value;
+        document.body.style.backgroundColor = selectedColor;
+        document.title = selectedColor.toUpperCase(); // Set title to HEX code
+        picker.remove(); // Remove picker from page
+      }
     });
   </script>
 </body>
