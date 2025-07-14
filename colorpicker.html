@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Picker Page</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      transition: background 0.3s ease;
+      font-family: sans-serif;
+    }
+    #picker {
+      display: block;
+      width: 150px;
+      height: 150px;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+    #overlay {
+      display: none;
+      font-size: 1.5em;
+      color: white;
+      text-shadow: 0 0 4px black;
+      position: absolute;
+      bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <input type="color" id="picker">
+  <div id="overlay">Press SPACE to choose a new color</div>
+
+  <script>
+    const picker = document.getElementById('picker');
+    const overlay = document.getElementById('overlay');
+
+    picker.addEventListener('input', () => {
+      const color = picker.value;
+      document.body.style.backgroundColor = color;
+      picker.style.display = 'none';
+      overlay.style.display = 'block';
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.code === 'Space') {
+        picker.style.display = 'block';
+        overlay.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
