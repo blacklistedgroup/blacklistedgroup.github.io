@@ -28,9 +28,9 @@
   <script>
     const picker = document.getElementById('picker');
 
-    picker.addEventListener('input', () => {
+    picker.addEventListener('change', () => {
       document.body.style.backgroundColor = picker.value;
-      picker.remove(); // Remove the picker from the page
+      picker.remove(); // Remove the picker only when fully selected
     });
   </script>
 </body>
