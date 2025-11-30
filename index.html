@@ -17,6 +17,27 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+
+    <a href="thetaichilisted.html" class="secret-btn"></a>
+
+    <style>
+    .secret-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;      /* size of invisible area */
+        height: 80px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 9999;
+    }
+    
+    .secret-btn:hover {
+        opacity: 0.15;    /* optional little hint */
+        background: rgba(255,255,255,0.1);
+    }
+    </style>
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
         <div class="container-fluid">
